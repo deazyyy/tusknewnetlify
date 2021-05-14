@@ -137,9 +137,9 @@
         flex-flow: wrap;
         flex-direction: column;
     }
-    .btn-outer .bg-pink {
-        margin: 6px 0 !important;
-    }
+  .banner{
+    margin-top: 8vh;
+  }
     .moon-sec h1 {
         font-size: 26px;
         padding: 0 20px;
