@@ -105,7 +105,12 @@ nav .logo {
 .bg-green {
     background: #2afc7e !important;
 }
-
+.bg-orange{
+     background: #FFA500 !important;
+}
+.bg-brown{
+     background: #8B4513 !important;
+}
 .bg-pink-light {
     background: #f98aff !important;
 }
@@ -132,9 +137,6 @@ nav .logo {
      color: #fff;
 }
 .btn-outer{display: flex;}
-.btn-outer .bg-pink {
-    margin: 6px 10px;
-}
 
 .main-wrapper {
     background: url("../images/mainbg.png");
@@ -374,7 +376,7 @@ footer {
     padding: 8px 24px;
     min-width: 160px;
     text-align: center;
-    margin: 6px 0;
+    margin: 6px 10px 0 6px;
     position: relative;
     overflow: hidden !important;
    
