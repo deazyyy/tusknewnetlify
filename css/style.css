@@ -121,17 +121,17 @@ nav .logo {
 .bg-blue-dark {
     background: #00e5ff !important
 }
-
-.btn-main {
-    border-radius: 8px;
-    color: #fff;
-    background-color: #0ab3d0;
-    padding: 8px 24px;
-    min-width: 160px;
-    text-align: center;
-    margin: 6px 0;
+.btn_outer{
+      position: relative;
+    overflow: hidden;
 }
 
+
+.btn-main:hover{
+     text-decoration: none;
+     color: #fff;
+}
+.btn-outer{display: flex;}
 .btn-outer .bg-pink {
     margin: 6px 10px;
 }
@@ -202,6 +202,10 @@ nav .logo {
     /*  min-width: 250px;*/
     text-align: center;
     width: 33%;
+    transition: all 0.3s ease;
+}
+.cards:hover{
+     transform: translateY(10px);
 }
 
 .cards h4 {
@@ -309,4 +313,69 @@ footer {
 .lgbx img {
     height: 45px;
     margin-bottom: 8px;
+}
+
+
+/* shiny button **/
+.btn_shiny:before{
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 1);
+      width: 60px;
+      height: 100%;
+      left: 0px;
+      top: 0;
+      opacity: 0;
+      -webkit-filter: blur(30px);
+      filter: blur(30px);
+      transform: translateX(-50px) skewX(-15deg);         
+  }
+  .btn_shiny:after{
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 1);
+      width: 30px;
+      height: 100%;
+      left: 30px;
+      top: 0;
+      opacity: 0;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      transform: translateX(-50px) skewX(-15deg);          
+  }
+  .btn_shiny:hover:before {
+      transform: translateX(300px) skewX(-15deg);
+      opacity: 0.6;
+      transition: 2s;
+  }
+  .btn_shiny:hover:after {
+      transform: translateX(300px) skewX(-15deg);
+      opacity: 1;
+      transition: 2s;
+  }
+  
+  .btn_shiny{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index:0
+  }
+  .btnouter{
+     overflow: hidden;
+  }
+  .btn-main {
+    border-radius: 8px;
+    color: #fff;
+    background-color: #0ab3d0;
+    padding: 8px 24px;
+    min-width: 160px;
+    text-align: center;
+    margin: 6px 0;
+    position: relative;
+    overflow: hidden !important;
+   
 }
